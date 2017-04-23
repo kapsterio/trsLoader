@@ -13,7 +13,7 @@ Your should have java8+ and mysql properly installed, and cd to the directory wh
 
 `--spring.datasource.password=your_mysql_password` tells the program your mysql password, if haven't set password for your mysql account, you don't need to specify this argument.
 
-`--spring.datasource.url=your_database_url` tells the program your mysql database url, the default value for this arguemnt is 'jdbc:mysql://127.0.0.1:3306/mydb', means mysql server was provided locally on port 3306 and the used database name was 'mydb'. If have a different configuration, you need to sepecify it properly.
+`--spring.datasource.url=your_database_url` tells the program your mysql database url, the default value for this arguemnt is 'jdbc:mysql://127.0.0.1:3306/mydb', means mysql server was provided locally on port 3306 and the used database name was 'mydb'. If you have a different configuration, you need to sepecify it properly.
 
 You can provide multiple trs file to trsloader in one shot, and let it import all the data in your files to mysql.
 
