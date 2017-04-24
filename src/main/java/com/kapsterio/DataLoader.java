@@ -20,8 +20,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+import java.util.concurrent.*;
 
 /**
  * Created by bj-m-206255a on 2017/4/22.
@@ -34,7 +33,7 @@ public class DataLoader {
 
     private SimpleDateFormat format = new SimpleDateFormat("yyyy.MM.dd");
 
-    private ExecutorService executorService = Executors.newFixedThreadPool(10);
+    private ExecutorService executorService = new ThreadPoolExecutor(4, 4, 0L, TimeUnit.MILLISECONDS, new ArrayBlockingQueue<Runnable>(5), new ThreadPoolExecutor.CallerRunsPolicy());
 
     @Autowired
     private  PatentMapper mapper;
