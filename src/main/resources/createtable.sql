@@ -4,7 +4,7 @@ create table patent(
  apply_no VARCHAR(40),
  apply_date DATE,
  name VARCHAR(200) NOT NULL,
- primary_class_no VARCHAR(20),
+ primary_class_no TEXT,
  class_no TEXT,
  applier TEXT,
  author TEXT,

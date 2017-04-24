@@ -34,7 +34,7 @@ public class DataLoader {
 
     private SimpleDateFormat format = new SimpleDateFormat("yyyy.MM.dd");
 
-    private ExecutorService executorService = Executors.newFixedThreadPool(20);
+    private ExecutorService executorService = Executors.newFixedThreadPool(10);
 
     @Autowired
     private  PatentMapper mapper;
